@@ -1,12 +1,12 @@
-import './App.css'
+import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import Home from "./pages/Home";
 const App = () => {
   return (
     <>
-      <h1 className='bg bg-primary'>Hello</h1>
+      <Home />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
