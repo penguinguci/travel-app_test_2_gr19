@@ -1,0 +1,47 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.nav {
+    .nav-hover {
+        color: rgb(50, 50, 50);
+        text-decoration: none;
+    }
+}
+
+.nav-hover:hover {
+    color: #F44B87FF;
+}
+
+.btn-outline-pink {
+    border: 2px solid #F44B87FF;
+    color: #F44B87FF;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-pink:hover {
+    background-color: #F44B87FF;
+    color: white;
+}
+
+.btn-pink {
+    color: white;
+    background-color: #F44B87FF;
+    border: 2px solid #F44B87FF;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.btn-pink:hover {
+    background-color: #F44B87FF; 
+    border-color: #F44B87FF;
+}
+
+.fs-small {
+    font-size: 12px;
+}
