@@ -107,7 +107,7 @@ const Home = () => {
             <span style={{ fontSize: "20px" }}>
               We have all your Independence Day sweets covered.
             </span>
-            <div className="row mt-3 d-flex">
+            <div className="row mt-3 d-flex mb-5">
               <Card />
               <Card />
               <Card />

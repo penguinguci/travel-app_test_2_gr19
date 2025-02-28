@@ -3,6 +3,7 @@ import logoChefify from '../assets/images/chefify.png'
 import avatar from '../assets/images/avatar.png'
 import check from '../assets/images/check.png'
 import './Component.scss'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -38,10 +39,10 @@ const Header = () => {
                             <a href="#" className="nav-link nav-hover link-underline-light">Ingredients</a>
                         </li>
                         <li className="nav-item">
-                            <a href="#" className="nav-link nav-hover link-underline-light">Occasions</a>
+                            <a href="/concact" className="nav-link nav-hover link-underline-light">Concact</a>
                         </li>
                         <li className="nav-item">
-                            <a href="#" className="nav-link nav-hover link-underline-light">About Us</a>
+                            <a href='/about' className="nav-link nav-hover link-underline-light">About Us</a>
                         </li>
                     </ul>
                 </nav>
@@ -97,7 +98,7 @@ const Header = () => {
                                 <a href="#" className="nav-link nav-hover link-underline-light">Occasions</a>
                             </li>
                             <li className="nav-item">
-                                <a href="#" className="nav-link nav-hover link-underline-light">About Us</a>
+                                <Link to={"/about"} className="nav-link nav-hover link-underline-light">About Us</Link>
                             </li>
                         </ul>
                     </div>

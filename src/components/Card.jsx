@@ -3,7 +3,7 @@ import product from "../assets/images/product.png";
 
 function Card() {
   return (
-    <div className="col-md-6 col-12">
+    <div className="col-md-6 col-1 mt-4">
       <div className="card">
         <div className="row g-3 align-items-center p-3">
           <div className="col-md-5">
