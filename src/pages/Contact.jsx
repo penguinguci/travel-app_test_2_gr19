@@ -9,7 +9,7 @@ const Contact = () => {
         <nav className="d-flex align-items-center mb-4">
             <a href="/" className="text-decoration-none text-dark fw-bold">Home</a>
             <i className="bi bi-chevron-right mx-2" style={{fontSize: "13px"}}></i>
-            <a href="/" className="text-pink fw-bold text-decoration-none">Contact</a>
+            <a href="/contact" className="text-pink fw-bold text-decoration-none">Contact</a>
         </nav>
       
         <div className="text-center mb-4">

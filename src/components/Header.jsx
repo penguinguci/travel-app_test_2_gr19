@@ -42,7 +42,7 @@ const Header = () => {
                             <a href="#" className="nav-link nav-hover link-underline-light">Ingredients</a>
                         </li>
                         <li className="nav-item">
-                            <a href="/concact" className="nav-link nav-hover link-underline-light">Concact</a>
+                            <a href="/contact" className="nav-link nav-hover link-underline-light">Concact</a>
                         </li>
                         <li className="nav-item">
                             <a href='/about' className="nav-link nav-hover link-underline-light">About Us</a>
@@ -98,7 +98,7 @@ const Header = () => {
                                 <a href="#" className="nav-link nav-hover link-underline-light">Ingredients</a>
                             </li>
                             <li className="nav-item">
-                                <a href="#" className="nav-link nav-hover link-underline-light">Occasions</a>
+                                <a href="/contact" className="nav-link nav-hover link-underline-light">Contact</a>
                             </li>
                             <li className="nav-item">
                                 <Link to={"/about"} className="nav-link nav-hover link-underline-light">About Us</Link>
