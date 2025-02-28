@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import ModalCarousel from "../components/ModalCarousel";
 import Footer from "../components/Footer";
 import banner from "../assets/images/banner.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -8,6 +9,7 @@ import Card from "../components/Card";
 const Home = () => {
   return (
     <div>
+      <ModalCarousel/>
       <Header />
       <div>
         <div className="position-relative">

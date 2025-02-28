@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import logoChefify from '../assets/images/chefify.png'
+import avatar from '../assets/images/avatar.png'
+import check from '../assets/images/check.png'
 import './Component.scss'
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     return (
         <header className='bg-light shadow-sm'> 
@@ -44,8 +47,24 @@ const Header = () => {
                 </nav>
 
                 <div className='d-flex'>
-                    <button className="btn btn-outline-pink me-3">Login</button>
-                    <button className="btn btn-pink">Subscribe</button>
+                    {isLoggedIn ? (
+                        <>
+                            <button className="btn btn-outline-pink me-3 d-flex align-items-center">
+                                <span>
+                                    <img className=' img-thumbnail me-1' src={check} alt="" />
+                                </span>    
+                                Your Recipe Box
+                            </button>
+                            <div className="user-icon pointer-event">
+                                <img src={avatar} alt="" />
+                            </div>
+                        </>
+                    ) : (
+                        <>
+                            <button className="btn btn-outline-pink me-3">Login</button>
+                            <button className="btn btn-pink">Subscribe</button>
+                        </>
+                    )}
                 </div>
             </div>
 
