@@ -4,13 +4,16 @@ import avatar from '../assets/images/avatar.png'
 import check from '../assets/images/check.png'
 import './Component.scss'
 import { Link } from 'react-router-dom';
+import AdminLogin from '../pages/AdminLogin';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [showAdminLogin, setShowAdminLogin] = useState(false);
 
     return (
-        <header className='bg-light shadow-sm'> 
+        <>
+            <header className='bg-light shadow-sm'> 
             <div className="container py-3 d-flex align-items-center justify-content-between">
                 <a href="/" className='navbar-brand'>
                     <img src={logoChefify} alt="logo" className='img-fluid'/>
@@ -62,7 +65,7 @@ const Header = () => {
                         </>
                     ) : (
                         <>
-                            <button className="btn btn-outline-pink me-3">Login</button>
+                            <button className="btn btn-outline-pink me-3" onClick={() => setShowAdminLogin(true)}>Login</button>
                             <button className="btn btn-pink">Subscribe</button>
                         </>
                     )}
@@ -105,6 +108,11 @@ const Header = () => {
                 )}
             </div>
         </header>
+        <AdminLogin
+            show={showAdminLogin}
+            handleClose={() => setShowAdminLogin(false)}
+        />
+    </>
     );
 }
 
