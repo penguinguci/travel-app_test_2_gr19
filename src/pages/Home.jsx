@@ -3,9 +3,17 @@ import ModalCarousel from "../components/ModalCarousel";
 import Footer from "../components/Footer";
 import banner from "../assets/images/banner.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import lotusSalad from "../assets/images/lotus-salad.jpg";
 
 import CartProduct from "../components/CartProduct";
 import Card from "../components/Card";
+
+const recipe = { 
+  title: "Lotus delight salad", 
+  time: "20 minutes", 
+  image: lotusSalad 
+}
+  
 const Home = () => {
   return (
     <div>
@@ -75,10 +83,10 @@ const Home = () => {
               We have all your Independence Day sweets covered.
             </span>
             <div className="row g-4 mt-3">
-              <CartProduct />
-              <CartProduct />
-              <CartProduct />
-              <CartProduct />
+              <CartProduct recipe={recipe}/>
+              <CartProduct recipe={recipe}/>
+              <CartProduct recipe={recipe}/>
+              <CartProduct recipe={recipe}/>
             </div>
           </div>
           <div className="d-flex flex-column justify-content-center align-items-center mt-5">
@@ -91,10 +99,10 @@ const Home = () => {
               We have all your Independence Day sweets covered.
             </span>
             <div className="row g-4 mt-3">
-              <CartProduct />
-              <CartProduct />
-              <CartProduct />
-              <CartProduct />
+              <CartProduct recipe={recipe}/>
+              <CartProduct recipe={recipe}/>
+              <CartProduct recipe={recipe}/>
+              <CartProduct recipe={recipe}/>
             </div>
           </div>
 

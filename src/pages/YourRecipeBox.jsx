@@ -2,7 +2,8 @@ import React, { useState } from "react";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import CartProduct2 from "../components/CartProduct2";
+import CartProduct from "../components/CartProduct";
+
 import Breadcrumb from "../components/Breadcrumb";
 import Pagination from "../components/Pagination";
 
@@ -171,7 +172,7 @@ const YourRecipeBox = () => {
           {/* Danh sách món ăn theo từng tab */}
           <div className="row g-4 mt-3">
             {currentRecipes.map((recipe, index) => (
-              <CartProduct2 key={index} recipe={recipe} />
+              <CartProduct key={index} recipe={recipe} />
             ))}
           </div>
 
