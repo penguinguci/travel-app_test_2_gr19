@@ -8,8 +8,15 @@ import AdminLogin from '../pages/AdminLogin';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(
+        localStorage.getItem("user") === "true"
+    );
     const [showAdminLogin, setShowAdminLogin] = useState(false);
+
+    const handleLogout = () => {
+        localStorage.removeItem("user");
+        window.location.reload();
+    };
 
     return (
         <>
@@ -50,24 +57,39 @@ const Header = () => {
                     </ul>
                 </nav>
 
-                <div className='d-flex'>
+                <div className="d-flex">
                     {isLoggedIn ? (
-                        <>
-                            <button className="btn btn-outline-pink me-3 d-flex align-items-center">
-                                <span>
-                                    <img className=' img-thumbnail me-1' src={check} alt="" />
-                                </span>    
-                                Your Recipe Box
+                    <>
+                        <button className="btn btn-outline-pink me-3 d-flex align-items-center">
+                        <span>
+                            <img className=" img-thumbnail me-1" src={check} alt="" />
+                        </span>
+                        Your Recipe Box
+                        </button>
+                        <div className="user-icon pointer-event">
+                        <img src={avatar} alt="" data-bs-toggle="dropdown" />
+                        <ul className="dropdown-menu p-1">
+                            <li>
+                            <button
+                                className="btn btn-pink dropdown-item"
+                                onClick={handleLogout}
+                            >
+                                Logout
                             </button>
-                            <div className="user-icon pointer-event">
-                                <img src={avatar} alt="" />
-                            </div>
-                        </>
+                            </li>
+                        </ul>
+                        </div>
+                    </>
                     ) : (
-                        <>
-                            <button className="btn btn-outline-pink me-3" onClick={() => setShowAdminLogin(true)}>Login</button>
-                            <button className="btn btn-pink">Subscribe</button>
-                        </>
+                    <>
+                        <button
+                        className="btn btn-outline-pink me-3"
+                        onClick={() => setShowAdminLogin(true)}
+                        >
+                        Login
+                        </button>
+                        <button className="btn btn-pink">Subscribe</button>
+                    </>
                     )}
                 </div>
             </div>
