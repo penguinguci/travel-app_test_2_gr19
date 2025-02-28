@@ -49,7 +49,7 @@ const Header = () => {
                             <a href="#" className="nav-link nav-hover link-underline-light">Ingredients</a>
                         </li>
                         <li className="nav-item">
-                            <a href="/contact" className="nav-link nav-hover link-underline-light">Concact</a>
+                            <a href="/contact" className="nav-link nav-hover link-underline-light">Contact</a>
                         </li>
                         <li className="nav-item">
                             <a href='/about' className="nav-link nav-hover link-underline-light">About Us</a>
@@ -60,12 +60,12 @@ const Header = () => {
                 <div className="d-flex">
                     {isLoggedIn ? (
                     <>
-                        <button className="btn btn-outline-pink me-3 d-flex align-items-center">
+                        <Link to="/your-recipe-box" className="btn btn-outline-pink me-3 d-flex align-items-center">
                         <span>
                             <img className=" img-thumbnail me-1" src={check} alt="" />
                         </span>
                         Your Recipe Box
-                        </button>
+                        </Link>
                         <div className="user-icon pointer-event">
                         <img src={avatar} alt="" data-bs-toggle="dropdown" />
                         <ul className="dropdown-menu p-1">
