@@ -2,8 +2,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Home from "./pages/Home";
-import Contact from "./pages/Contact";
+import YourRecipeBox from "./pages/YourRecipeBox";
 import About from './pages/About'
+import Contact from './pages/Contact'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Routes>
           <Route path="/" element = {<Home/>}/>
           <Route path="/contact" element = {<Contact/>}/>
+          <Route path="/your-recipe-box" element = {<YourRecipeBox/>}/>
           <Route path="/about" element = {<About/>}/>
         </Routes>
       </BrowserRouter>
