@@ -18,7 +18,12 @@ function Card() {
           <div className="col-md-7">
             <div className="d-flex justify-content-between align-items-start">
               <h5 className="fw-bold">Stuffed sticky rice ball</h5>
-              <AiTwotoneSave className="fs-4 text-danger" />
+              <div
+              className="col-2 btn-outline-pink border-pink rounded-circle d-flex align-items-center justify-content-center"
+              style={{ width: "36px", height: "36px" }}
+            >
+              <i className="bi bi-bookmark" style={{WebkitTextStrokeWidth: "thin"}}></i>
+            </div>
             </div>
 
             <span className="text-muted small">34 minutes</span>
