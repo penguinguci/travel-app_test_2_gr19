@@ -2,7 +2,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Home from "./pages/Home";
-import Contact from "./pages/Contact";
+import YourRecipeBox from "./pages/YourRecipeBox";
 import About from './pages/About'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element = {<Home/>}/>
-          <Route path="/concact" element = {<Contact/>}/>
+          <Route path="/your-recipe-box" element = {<YourRecipeBox/>}/>
           <Route path="/about" element = {<About/>}/>
         </Routes>
       </BrowserRouter>
