@@ -27,30 +27,34 @@ const ITEMS_PER_PAGE = 8; // Số món ăn hiển thị trên mỗi trang
 // Danh sách món ăn cho từng tab
 const recipesTabSaved = [
   {
+    id: 1,
     title: "Italian-style tomato salad",
     time: "11 minutes",
     image: tomatoSalad,
   },
   {
+    id: 2,
     title: "Vegetable and shrimp spaghetti",
     time: "15 minutes",
     image: shrimpSpaghetti,
   },
-  { title: "Lotus delight salad", time: "20 minutes", image: lotusSalad },
-  { title: "Snack cakes", time: "22 minutes", image: snackCakes },
+  { id: 3, title: "Lotus delight salad", time: "20 minutes", image: lotusSalad },
+  { id: 4, title: "Snack cakes", time: "22 minutes", image: snackCakes },
   {
+    id: 5,
     title: "Salad with cabbage and shrimp",
     time: "32 minutes",
     image: cabbageShrimp,
   },
   {
+    id: 6,
     title: "Bean, shrimp, and potato salad",
     time: "52 minutes",
     image: beanPotatoSalad,
   },
-  { title: "Sunny-side up fried eggs", time: "32 minutes", image: friedEggs },
-  { title: "Lotus delight salad", time: "32 minutes", image: lotusSalad2 },
-];
+  { id: 7, title: "Sunny-side up fried eggs", time: "32 minutes", image: friedEggs },
+  { id: 8, title: "Lotus delight salad", time: "32 minutes", image: lotusSalad2 },
+]
 
 const recipesTabFolder = [
   { title: "Snack cakes", time: "22 minutes", image: snackCakes },
