@@ -84,7 +84,7 @@ const AdminLogin = ({ show, handleClose }) => {
                   <span className="fw-bold">OR</span>
                   <hr />
                 </div>
-                <button className="btn btn-outline-pink me-3">Sign Up</button>
+                <button className="btn btn-outline-pink">Sign Up</button>
                 <p className="srv text-center ">
                   By continuing, you agree to the updated <b>Terms of Sale</b>,{" "}
                   <b>Terms of Service</b>, and <b>Privacy Policy</b>.
