@@ -11,6 +11,8 @@ import snackCakes from "../assets/images/snack-cakes.jpg";
 import cabbageShrimp from "../assets/images/cabbage-shrimp.jpg";
 import beanPotatoSalad from "../assets/images/bean-potato-salad.jpg";
 import friedEggs from "../assets/images/fried-eggs.jpg";
+import lotusSalad from "../assets/images/lotus-salad.jpg";
+
 import lotusSalad2 from "../assets/images/lotus-salad-2.jpg";
 
 const recipesTabSaved = [
@@ -26,22 +28,23 @@ const recipesTabSaved = [
     time: "15 minutes",
     image: shrimpSpaghetti,
   },
-  { id: 3, title: "Snack cakes", time: "22 minutes", image: snackCakes },
+  { id: 3, title: "Lotus delight salad", time: "20 minutes", image: lotusSalad },
+  { id: 4, title: "Snack cakes", time: "22 minutes", image: snackCakes },
   {
-    id: 4,
+    id: 5,
     title: "Salad with cabbage and shrimp",
     time: "32 minutes",
     image: cabbageShrimp,
   },
   {
-    id: 5,
+    id: 6,
     title: "Bean, shrimp, and potato salad",
     time: "52 minutes",
     image: beanPotatoSalad,
   },
-  { id: 6, title: "Sunny-side up fried eggs", time: "32 minutes", image: friedEggs },
-  { id: 7, title: "Lotus delight salad", time: "32 minutes", image: lotusSalad2 },
-];
+  { id: 7, title: "Sunny-side up fried eggs", time: "32 minutes", image: friedEggs },
+  { id: 8, title: "Lotus delight salad", time: "32 minutes", image: lotusSalad2 },
+]
 
 const DetailProduct = () => {
   const [plan, setPlan] = useState("monthly");

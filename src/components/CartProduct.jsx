@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function CartProduct({ recipe }) {
   return (
-    <Link to={"/detail/"+recipe.id} className="col-md-3 col-sm-6 col-12 mb-4 text-decoration-none">
-      <div >
+
+    <Link to={"/detail/"+recipe.id} className="col-md-3 col-sm-6 col-12 mb-4 text-decoration-none" onClick={() => window.scrollTo(0, 0)}>
         <div className="card shadow-sm h-100 d-flex flex-column justify-content-between">
           <img
               src={`${recipe.image}`}
@@ -40,7 +40,6 @@ function CartProduct({ recipe }) {
             </span>
           </div>
         </div>
-      </div>
     </Link>
   );
 }
