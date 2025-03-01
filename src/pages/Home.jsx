@@ -8,11 +8,52 @@ import lotusSalad from "../assets/images/lotus-salad.jpg";
 import CartProduct from "../components/CartProduct";
 import Card from "../components/Card";
 
+import tomatoSalad from "../assets/images/tomato-salad.jpg";
+import shrimpSpaghetti from "../assets/images/shrimp-spaghetti.jpg";
+import snackCakes from "../assets/images/snack-cakes.jpg";
+import cabbageShrimp from "../assets/images/cabbage-shrimp.jpg";
+import beanPotatoSalad from "../assets/images/bean-potato-salad.jpg";
+import friedEggs from "../assets/images/fried-eggs.jpg";
+import lotusSalad2 from "../assets/images/lotus-salad-2.jpg";
+
 const recipe = { 
   title: "Lotus delight salad", 
   time: "20 minutes", 
   image: lotusSalad 
 }
+
+
+
+const recipesTabSaved = [
+  {
+    id: 1,
+    title: "Italian-style tomato salad",
+    time: "11 minutes",
+    image: tomatoSalad,
+  },
+  {
+    id: 2,
+    title: "Vegetable and shrimp spaghetti",
+    time: "15 minutes",
+    image: shrimpSpaghetti,
+  },
+  { id: 3, title: "Lotus delight salad", time: "20 minutes", image: lotusSalad },
+  { title: "Snack cakes", time: "22 minutes", image: snackCakes },
+  {
+    id: 4,
+    title: "Salad with cabbage and shrimp",
+    time: "32 minutes",
+    image: cabbageShrimp,
+  },
+  {
+    id: 5,
+    title: "Bean, shrimp, and potato salad",
+    time: "52 minutes",
+    image: beanPotatoSalad,
+  },
+  { id: 6, title: "Sunny-side up fried eggs", time: "32 minutes", image: friedEggs },
+  { id: 7, title: "Lotus delight salad", time: "32 minutes", image: lotusSalad2 },
+];
   
 const Home = () => {
   return (
@@ -83,10 +124,11 @@ const Home = () => {
               We have all your Independence Day sweets covered.
             </span>
             <div className="row g-4 mt-3">
-              <CartProduct recipe={recipe}/>
-              <CartProduct recipe={recipe}/>
-              <CartProduct recipe={recipe}/>
-              <CartProduct recipe={recipe}/>
+              {
+                recipesTabSaved.map((recipe, index) => (
+                  <CartProduct key={index} recipe={recipe} />
+                ))
+              }
             </div>
           </div>
           <div className="d-flex flex-column justify-content-center align-items-center mt-5">
@@ -99,10 +141,11 @@ const Home = () => {
               We have all your Independence Day sweets covered.
             </span>
             <div className="row g-4 mt-3">
-              <CartProduct recipe={recipe}/>
-              <CartProduct recipe={recipe}/>
-              <CartProduct recipe={recipe}/>
-              <CartProduct recipe={recipe}/>
+              {
+                recipesTabSaved.map((recipe, index) => (
+                  <CartProduct key={index} recipe={recipe} />
+                ))
+              }
             </div>
           </div>
 
@@ -116,10 +159,11 @@ const Home = () => {
               We have all your Independence Day sweets covered.
             </span>
             <div className="row mt-3 d-flex mb-5">
-              <Card />
-              <Card />
-              <Card />
-              <Card />
+              {
+                recipesTabSaved.map((item, index) => (
+                  <Card key={index} item = {item} />
+                ))
+              }
             </div>
           </div>
         </div>
