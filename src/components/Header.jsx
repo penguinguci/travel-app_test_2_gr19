@@ -85,7 +85,7 @@ const Header = () => {
                   </span>
                   Your Recipe Box
                 </Link>
-                <div className="user-icon pointer-event">
+                <div className="user-icon pointer-event mx-3">
                   <img src={avatar} alt="" data-bs-toggle="dropdown" />
                   <ul className="dropdown-menu p-1">
                     <li>
@@ -97,6 +97,15 @@ const Header = () => {
                       </button>
                     </li>
                   </ul>
+                </div>
+                <div className="car">
+                  <Link to="/shopping">
+                    <i className="bi bi-cart fs-3"></i>
+                    <span className="position-absolute top-5 translate-middle badge rounded-pill bg-danger mt-2 me-5">
+                      {" "}
+                      2{/* {totalItems} */}
+                    </span>
+                  </Link>
                 </div>
               </>
             ) : (
